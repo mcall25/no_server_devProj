@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html ng-app='project1'>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body >
+
+    <ul>
+      <a ui-sref="home"><li>Home</li></a>
+      <a ui-sref="times"><li>Signup</li></a>
+
+    </ul>
+
+    <ui-view></ui-view>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.js" charset="utf-8"></script>
+      	<script src="./app.js"></script>
+        <script src="./home/homeController.js"></script>
+        <script src="./times/timesController.js"></script>
+          <script src="./service/service.js"></script>
+
+
+  </body>
+</html>
