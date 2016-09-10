@@ -1,5 +1,4 @@
 
-
     var trainData = [
   {stop: "Fri Sep 09 2016 4:50:00 GMT-0600 (MDT)"},
   {stop: "Fri Sep 09 2016 5:20:00 GMT-0600 (MDT)"},
@@ -33,24 +32,22 @@ angular.module('project1').service('service', function() {
 
   this.serviceData = trainData;
 
-
-
   this.click = function() {
       var today = new Date();
       var todaysDate = today.getDate();
-      function change(array) {
+
+      function changeDateInformation(array) {
           for (var i = 0; i < array.length; i++) {
             new Date(array[i].stop).setDate(todaysDate)
             console.log(array[i].stop);
           }
           return array;
         }
-        change(trainData);
+        changeDateInformation(trainData);
 
 
 
-
-      var func = function(array) {
+      var CheckForNextStop = function(array) {
           var n = new Date();
 
           for (var i = 0; i < array.length; i++) {
@@ -62,9 +59,6 @@ angular.module('project1').service('service', function() {
             }
           }
       }
-      console.log(func(trainData))
-
-      return func(trainData);
-
+      return CheckForNextStop(trainData);
   }
 })

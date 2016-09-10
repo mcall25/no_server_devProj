@@ -1,8 +1,7 @@
 <p>
-  
+
 
   <input  ng-model='filterText' type="text" name="name" value="">
-
   <section ng-repeat='stop in myData | filter: {stop: filterText }'> {{stop.stop}} </section>
 
 </p>

@@ -3,23 +3,39 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+    <link rel="stylesheet" href="./styles/style.css" media="screen" title="no title" charset="utf-8">
   </head>
-  <body >
+  <body>
+
+    <section class="top-section" >
+
+          <img src="https://www.google.com/imgres?imgurl=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fa%2Fa7%2FTransperth_Sets.JPG&imgrefurl=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FTrain&docid=4mnC2XaItgDhOM&tbnid=znsGCPbGAqU9EM%3A&w=3008&h=2000&bih=960&biw=1793&ved=0ahUKEwjJqeCA4oPPAhVP5GMKHVKmBIwQMwhiKAAwAA&iact=mrc&uact=8" alt="Menu Icon">
+
+
+    </section>
 
     <ul>
       <a ui-sref="home"><li>Home</li></a>
-      <a ui-sref="times"><li>Signup</li></a>
+      <a ui-sref="times"><li>Times</li></a>
+      <a ui-sref="fare"><li>fare</li></a>
 
     </ul>
 
     <ui-view></ui-view>
+
+    <section ng-controller="controller">
+      <dm-header foo="myFunc(msg)" title="Current Time"></dm-header>
+    </section>
 
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.js" charset="utf-8"></script>
       	<script src="./app.js"></script>
         <script src="./home/homeController.js"></script>
         <script src="./times/timesController.js"></script>
-          <script src="./service/service.js"></script>
+        <script src="./service/service.js"></script>
+        <script src="./controller.js"></script>
+        <script src="./directive/directive.js"></script>
+        <script src="./fare/fareController.js"></script>
 
 
   </body>

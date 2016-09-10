@@ -14,6 +14,10 @@ angular.module('project1', ['ui.router'])
     controller: 'timesController',
     templateUrl: 'times/times.html'
   })
-
+  .state('fare', {
+    url: '/fare',
+    controller: 'fareController',
+    templateUrl: 'fare/fare.html'
+  })
 
 })
